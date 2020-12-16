@@ -1,0 +1,20 @@
+{
+  "SC1": {
+    "Execution Flag": "Yes",
+    "TestKey": "SC1",
+    "Username": "fdas1",
+    "Password": "QRRt2"
+  },
+  "SC3": {
+    "Execution Flag": "Yes",
+    "TestKey": "SC3",
+    "Username": "fdas3",
+    "Password": "QRRt4"
+  },
+  "SC2": {
+    "Execution Flag": "Yes",
+    "TestKey": "SC2",
+    "Username": "fdas2",
+    "Password": "QRRt3"
+  }
+}
