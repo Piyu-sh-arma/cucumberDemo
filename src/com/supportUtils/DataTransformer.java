@@ -1,8 +1,7 @@
-package com.FW.supportUtils;
+package com.supportUtils;
 
 import org.apache.log4j.Logger;
 
-import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -19,6 +18,8 @@ public class DataTransformer {
      *
      *************************************************/
     public static void initDataFromSource() {
+        if (null != map)
+            return;
         String source = PropUtil.getProperty("TestData.Source").trim().toUpperCase();
         switch (source) {
             case "EXCEL":

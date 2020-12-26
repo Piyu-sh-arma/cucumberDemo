@@ -1,4 +1,4 @@
-package com.FW.supportUtils;
+package com.supportUtils;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;

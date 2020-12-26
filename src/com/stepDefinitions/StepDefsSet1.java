@@ -1,4 +1,4 @@
-package com.FW.stepDefinitions;
+package com.stepDefinitions;
 
 
 import io.cucumber.java.Before;
@@ -10,11 +10,12 @@ import io.cucumber.java.en.When;
 import java.util.Map;
 
 
-public class StepDefs {
+public class StepDefsSet1 {
     Scenario scenario;
 
     @Before
     public void beforeScenario(Scenario scenario) {
+        System.out.println("*************Before Scenario******************");
         this.scenario = scenario;
     }
 
@@ -29,19 +30,4 @@ public class StepDefs {
         scenario.attach("Entered " + arg0 + "," + arg1, "text/html", "Step2");
     }
 
-    @Given("Data setup is done properly")
-    public void dataSetupIsDoneProperly() {
-        scenario.attach("Data is setup properly", "text/html", "Step1");
-    }
-
-    @Then("fetch data map for {mapType}")
-    public void fetchDataForEXTSCUsername(Map<String, String> scenarioData) {
-
-        scenario.attach("Data Map is " + scenarioData, "text/html", "Step2");
-    }
-
-    @Then("fetch data map for {word}")
-    public void fetchDataMapForUsecase(String word) {
-        scenario.attach("Data Map is " + word, "text/html", "Step2");
-    }
 }

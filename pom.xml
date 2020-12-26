@@ -79,7 +79,7 @@
         <testOutputDirectory>${output.dir}</testOutputDirectory>
         <resources>
             <resource>
-                <directory>src\resources</directory>
+                <directory>src\features</directory>
             </resource>
             <resource>
                 <directory>${project.basedir}\resources</directory>
@@ -87,7 +87,7 @@
         </resources>
         <testResources>
             <testResource>
-                <directory>src\resources</directory>
+                <directory>src\features</directory>
             </testResource>
             <testResource>
                 <directory>${project.basedir}\resources</directory>
@@ -157,7 +157,7 @@
                             <!-- output directory for the generated report -->
                             <outputDirectory>${project.build.directory}/advanceReports</outputDirectory>
                             <!-- optional, defaults to outputDirectory if not specified -->
-                            <inputDirectory>${project.build.directory}</inputDirectory>
+                            <inputDirectory>${project.build.directory}/JSONReport</inputDirectory>
                             <jsonFiles>
                                 <param>**/*.json</param>
                             </jsonFiles>

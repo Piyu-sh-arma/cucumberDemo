@@ -1,4 +1,4 @@
-package com.FW.supportUtils;
+package com.supportUtils;
 
 import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.apache.log4j.Logger;
