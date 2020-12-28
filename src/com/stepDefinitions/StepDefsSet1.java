@@ -15,19 +15,26 @@ public class StepDefsSet1 {
 
     @Before
     public void beforeScenario(Scenario scenario) {
-        System.out.println("*************Before Scenario******************");
         this.scenario = scenario;
     }
 
     @Given("Application {fieldType} is launched")
     public void LaunchApplication(String url) {
         scenario.log("Application Launched : " + url);
-        scenario.attach("Application Launched : " + url, "text/html", "Step1");
     }
 
     @When("User enters {fieldType} ,{fieldType}")
     public void userEntersSC_UsernameSC_Pwd(String arg0, String arg1) {
-        scenario.attach("Entered " + arg0 + "," + arg1, "text/html", "Step2");
+        scenario.log("Entered UserName : " + arg0 + ", Password : " + arg1);
     }
 
+    @Given("Data setup is done properly")
+    public void dataSetupIsDoneProperly() {
+        scenario.log("Setup done");
+    }
+
+    @Then("fetch data map for {mapType}")
+    public void fetchDataMapForUsecase(Map<String, String> map) {
+        scenario.log("Fetched ");
+    }
 }
